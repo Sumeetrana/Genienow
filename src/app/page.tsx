@@ -10,18 +10,21 @@ import { buildFAQSchema } from "@/lib/seo";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Trusted Home Services in Abu Dhabi | Genienow",
+  title: "Trusted Home & Business Services in Abu Dhabi | Genienow",
   description:
-    "Book verified cleaners, babysitters, home cooks & house helpers in Abu Dhabi via WhatsApp. Serving Khalifa City, Al Reem Island, Yas Island, Saadiyat & across the UAE.",
+    "Book verified cleaners, cooks, babysitters & house helpers in Abu Dhabi for homes, offices, shops & restaurants — all via WhatsApp. Serving Khalifa City, Al Reem Island, Yas Island, Saadiyat & across Abu Dhabi.",
   keywords: [
     "home services Abu Dhabi",
+    "business services Abu Dhabi",
     "cleaning services Abu Dhabi",
+    "office cleaning Abu Dhabi",
     "babysitter Abu Dhabi",
     "house cleaning Abu Dhabi",
     "maid service Abu Dhabi",
     "home cook Abu Dhabi",
     "house help Abu Dhabi",
     "pet sitting Abu Dhabi",
+    "commercial cleaning Abu Dhabi",
     "Genienow",
     "Genienow UAE",
   ],

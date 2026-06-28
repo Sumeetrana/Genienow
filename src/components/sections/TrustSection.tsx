@@ -14,9 +14,9 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 const trustPoints = [
   {
     icon: ShieldCheck,
-    title: "Verified Providers",
+    title: "Independent & Verified",
     description:
-      "Every service provider goes through a careful background check and personal verification before being listed on our platform.",
+      "Every provider is a self-employed individual — not a Genienow employee. We personally verify their identity and experience before they join our network.",
     color: "bg-green-50 text-green-600",
   },
   {
@@ -68,7 +68,7 @@ export default function TrustSection() {
             Built around your peace of mind
           </h2>
           <p className="text-slate-400 text-lg leading-relaxed">
-            Trust isn&apos;t a feature — it&apos;s the foundation. Every aspect of how we operate is designed to give you confidence from the very first message.
+            We connect you with independent, verified service providers — not a faceless agency. Every provider is a real individual who has been personally checked by our team before their first booking.
           </p>
         </AnimatedSection>
 

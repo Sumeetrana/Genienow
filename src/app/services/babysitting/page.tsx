@@ -25,13 +25,13 @@ export const metadata: Metadata = {
     "baby sitters Abudhabi",
   ],
   alternates: {
-    canonical: "https://www.genienow.ae/services/babysitting",
+    canonical: "https://www.getgenienow.com/services/babysitting",
   },
   openGraph: {
     title: "Babysitters in Abu Dhabi | Trusted Childcare | Genienow",
     description:
       "Find a verified babysitter in Abu Dhabi for evening, weekend & emergency childcare. Serving Khalifa City, Al Reem Island, Yas Island & more.",
-    url: "https://www.genienow.ae/services/babysitting",
+    url: "https://www.getgenienow.com/services/babysitting",
   },
 };
 

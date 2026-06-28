@@ -26,13 +26,13 @@ export const metadata: Metadata = {
     "dog walker Abudhabi",
   ],
   alternates: {
-    canonical: "https://www.genienow.ae/services/pet-sitting",
+    canonical: "https://www.getgenienow.com/services/pet-sitting",
   },
   openGraph: {
     title: "Pet Sitters in Abu Dhabi | Dog Walking & Pet Care | Genienow",
     description:
       "Find reliable pet sitters & dog walkers in Abu Dhabi. Trusted in-home care for dogs, cats & more across Khalifa City, Al Reem Island, Yas Island & beyond.",
-    url: "https://www.genienow.ae/services/pet-sitting",
+    url: "https://www.getgenienow.com/services/pet-sitting",
   },
 };
 

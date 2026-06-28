@@ -26,13 +26,13 @@ export const metadata: Metadata = {
     "personal home help Abu Dhabi",
   ],
   alternates: {
-    canonical: "https://www.genienow.ae/for-individuals",
+    canonical: "https://www.getgenienow.com/for-individuals",
   },
   openGraph: {
     title: "Home Services for Individuals & Families in Abu Dhabi | Genienow",
     description:
       "Genienow helps Abu Dhabi residents with trusted cleaning, cooking, babysitting, house help & pet sitting. Book via WhatsApp.",
-    url: "https://www.genienow.ae/for-individuals",
+    url: "https://www.getgenienow.com/for-individuals",
   },
 };
 

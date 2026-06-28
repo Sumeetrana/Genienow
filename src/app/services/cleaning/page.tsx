@@ -26,13 +26,13 @@ export const metadata: Metadata = {
     "house cleaners Abudhabi",
   ],
   alternates: {
-    canonical: "https://www.genienow.ae/services/cleaning",
+    canonical: "https://www.getgenienow.com/services/cleaning",
   },
   openGraph: {
     title: "Cleaners in Abu Dhabi | House, Villa & Office Cleaning | Genienow",
     description:
       "Find verified cleaners in Abu Dhabi for house, villa & office cleaning. Serving Khalifa City, Al Reem Island, Yas Island, Saadiyat & more.",
-    url: "https://www.genienow.ae/services/cleaning",
+    url: "https://www.getgenienow.com/services/cleaning",
   },
 };
 

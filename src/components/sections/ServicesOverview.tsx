@@ -21,25 +21,30 @@ const iconMap: Record<string, React.ElementType> = {
   PawPrint,
 };
 
-const serviceDetails: Record<string, { what: string[]; whatsappMsg: string }> = {
+const serviceDetails: Record<string, { what: string[]; audience: string; whatsappMsg: string }> = {
   cleaning: {
-    what: ["Deep cleaning", "Regular housekeeping", "Office cleaning", "Move-in/out cleaning"],
+    what: ["House & villa cleaning", "Office & co-working spaces", "Retail shops & restaurants", "Move-in/out & deep cleaning"],
+    audience: "Homes & Businesses",
     whatsappMsg: "Hi! I'm interested in your Cleaning service.",
   },
   "house-help": {
-    what: ["Daily household tasks", "Laundry & ironing", "Grocery errands", "General upkeep"],
+    what: ["Daily household tasks", "Laundry & ironing", "Grocery errands", "Reception & office support"],
+    audience: "Homes & Businesses",
     whatsappMsg: "Hi! I'm interested in your House Help service.",
   },
   cooking: {
-    what: ["Daily home cooking", "Weekly meal prep", "Vegetarian & non-veg options", "Customised menus"],
+    what: ["Daily home cooking", "Weekly meal prep", "Arabic, Asian & Western cuisine", "Customised menus & dietary needs"],
+    audience: "Homes & Families",
     whatsappMsg: "Hi! I'm interested in your Cooking service.",
   },
   babysitting: {
     what: ["Occasional babysitting", "Evening childcare", "Weekend support", "Emergency availability"],
+    audience: "Families",
     whatsappMsg: "Hi! I'm interested in your Babysitting service.",
   },
   "pet-sitting": {
-    what: ["Dog walking", "Pet feeding & care", "Home visits", "Travel pet-sitting"],
+    what: ["Dog walking", "Pet feeding & care", "Home visits", "Holiday pet care"],
+    audience: "Pet Owners",
     whatsappMsg: "Hi! I'm interested in your Pet Sitting service.",
   },
 };
@@ -53,10 +58,10 @@ export default function ServicesOverview() {
             What We Offer
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight mb-5">
-            Every service your home needs
+            Every service your home & business needs
           </h2>
           <p className="text-slate-500 text-lg leading-relaxed">
-            From a one-time deep clean to daily cooking, our trusted providers are ready to help — on your schedule.
+            From daily cooking and childcare for families to regular office cleaning and business support — our verified providers serve homes, shops, and businesses across Abu Dhabi.
           </p>
         </AnimatedSection>
 
@@ -73,8 +78,13 @@ export default function ServicesOverview() {
                 >
                   {/* Card header */}
                   <div className={`${bg} px-6 pt-6 pb-5`}>
-                    <div className={`w-12 h-12 rounded-xl bg-white/80 ${accent} flex items-center justify-center mb-4 shadow-sm`}>
-                      <Icon size={22} />
+                    <div className="flex items-start justify-between mb-4">
+                      <div className={`w-12 h-12 rounded-xl bg-white/80 ${accent} flex items-center justify-center shadow-sm`}>
+                        <Icon size={22} aria-hidden="true" />
+                      </div>
+                      <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-500 bg-white/70 border border-slate-200/60 px-2 py-1 rounded-full">
+                        {details.audience}
+                      </span>
                     </div>
                     <h3 className="text-slate-900 font-bold text-xl mb-1">{title}</h3>
                     <p className={`text-sm font-medium ${accent}`}>{tagline}</p>

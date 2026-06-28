@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     "domestic services UAE",
   ],
   alternates: {
-    canonical: "https://www.genienow.ae/services",
+    canonical: "https://www.getgenienow.com/services",
   },
   openGraph: {
     title: "Home Services in Abu Dhabi | Genienow",
     description:
       "Professional cleaning, house help, cooking, babysitting & pet sitting in Abu Dhabi. Verified providers, WhatsApp booking.",
-    url: "https://www.genienow.ae/services",
+    url: "https://www.getgenienow.com/services",
   },
 };
 

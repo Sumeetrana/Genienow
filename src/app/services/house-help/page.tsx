@@ -24,13 +24,13 @@ export const metadata: Metadata = {
     "home helper Abudhabi",
   ],
   alternates: {
-    canonical: "https://www.genienow.ae/services/house-help",
+    canonical: "https://www.getgenienow.com/services/house-help",
   },
   openGraph: {
     title: "House Help in Abu Dhabi | Trusted Home Assistants | Genienow",
     description:
       "Find reliable house help in Abu Dhabi for daily chores, errands & household management. Verified home assistants across Khalifa City, Al Reem Island, Yas Island & more.",
-    url: "https://www.genienow.ae/services/house-help",
+    url: "https://www.getgenienow.com/services/house-help",
   },
 };
 

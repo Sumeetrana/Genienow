@@ -25,13 +25,13 @@ export const metadata: Metadata = {
     "cooking service Abudhabi",
   ],
   alternates: {
-    canonical: "https://www.genienow.ae/services/cooking",
+    canonical: "https://www.getgenienow.com/services/cooking",
   },
   openGraph: {
     title: "Cooks in Abu Dhabi | Home Cook & Personal Chef Service | Genienow",
     description:
       "Hire experienced home cooks in Abu Dhabi for daily meals, meal prep & special occasions. Arabic, Indian, Western cuisines & more.",
-    url: "https://www.genienow.ae/services/cooking",
+    url: "https://www.getgenienow.com/services/cooking",
   },
 };
 

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Shield, Clock, Star, Sparkles, ChefHat, Home, Baby, PawPrint } from "lucide-react";
+import { ArrowRight, Shield, Clock, Star, Sparkles, ChefHat, Home, Baby, PawPrint, Building2 } from "lucide-react";
 import { whatsappLink } from "@/lib/constants";
 
 const serviceCards = [
@@ -16,7 +16,13 @@ const serviceCards = [
 const trustBadges = [
   { icon: Shield, label: "Verified Providers" },
   { icon: Clock, label: "Fast Response" },
-  { icon: Star, label: "Professional Service" },
+  { icon: Star, label: "5-Star Quality" },
+  { icon: Building2, label: "Homes & Businesses" },
+];
+
+const audiences = [
+  { label: "For Individuals & Families", href: "/for-individuals" },
+  { label: "For Offices & Businesses", href: "/for-businesses" },
 ];
 
 export default function HeroSection() {
@@ -48,7 +54,7 @@ export default function HeroSection() {
             className="inline-flex items-center gap-2 bg-green-50 border border-green-100 text-green-700 text-xs font-semibold uppercase tracking-widest px-3.5 py-1.5 rounded-full mb-8"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-            Now Serving Abu Dhabi via WhatsApp
+            Homes &amp; Businesses · Abu Dhabi · WhatsApp Booking
           </motion.div>
 
           <motion.h1
@@ -57,12 +63,14 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-5xl sm:text-6xl lg:text-[64px] font-bold tracking-tight text-slate-900 leading-[1.08] mb-6"
           >
-            Abu Dhabi Home
+            Trusted Services
             <br />
-            Services{" "}
+            for Homes{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-500">
-              You Can Trust
+              &amp; Businesses
             </span>
+            <br />
+            in Abu Dhabi
           </motion.h1>
 
           <motion.p
@@ -71,14 +79,14 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-slate-500 leading-relaxed mb-10"
           >
-            Connect instantly with verified service providers for cleaning, cooking, babysitting, house help & pet sitting across Abu Dhabi — all through a simple WhatsApp message.
+            From villas and apartments to offices, shops, and restaurants — connect with verified service providers for cleaning, cooking, house help, babysitting &amp; pet sitting across Abu Dhabi. All through a simple WhatsApp message.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-3 mb-12"
+            className="flex flex-col sm:flex-row gap-3 mb-6"
           >
             <a
               href={whatsappLink()}
@@ -86,7 +94,7 @@ export default function HeroSection() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2.5 bg-green-600 hover:bg-green-700 text-white font-semibold text-base px-7 py-3.5 rounded-xl transition-all duration-200 shadow-lg shadow-green-100 hover:shadow-green-200"
             >
-              <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+              <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5" aria-hidden="true">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
               </svg>
               Chat on WhatsApp
@@ -101,6 +109,25 @@ export default function HeroSection() {
             </Link>
           </motion.div>
 
+          {/* Audience quick links */}
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.38 }}
+            className="flex flex-wrap gap-3 mb-10"
+          >
+            {audiences.map(({ label, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-green-700 transition-colors group"
+              >
+                <ArrowRight size={13} className="text-green-500 group-hover:translate-x-0.5 transition-transform" />
+                {label}
+              </Link>
+            ))}
+          </motion.div>
+
           {/* Trust badges */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -111,7 +138,7 @@ export default function HeroSection() {
             {trustBadges.map(({ icon: Icon, label }) => (
               <div key={label} className="flex items-center gap-2 text-sm text-slate-500">
                 <div className="w-5 h-5 rounded-full bg-green-50 flex items-center justify-center">
-                  <Icon size={11} className="text-green-600" />
+                  <Icon size={11} className="text-green-600" aria-hidden="true" />
                 </div>
                 {label}
               </div>
@@ -132,7 +159,7 @@ export default function HeroSection() {
               {/* Chat header */}
               <div className="flex items-center gap-3 pb-4 border-b border-slate-50">
                 <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-green-400 to-emerald-600 flex items-center justify-center shadow-sm">
-                  <Sparkles size={18} className="text-white" />
+                  <Sparkles size={18} className="text-white" aria-hidden="true" />
                 </div>
                 <div>
                   <p className="font-semibold text-slate-900 text-sm">Genienow</p>
@@ -143,21 +170,21 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              {/* Chat bubbles */}
+              {/* Chat bubbles — business example */}
               <div className="py-4 flex flex-col gap-3">
                 <div className="bg-slate-50 rounded-2xl rounded-tl-sm px-4 py-3 max-w-[85%]">
                   <p className="text-sm text-slate-700">
-                    Hi! I need someone for weekly house cleaning. 🏠
+                    Hi! We need daily office cleaning for our shop in Al Reem Island. 🏢
                   </p>
                 </div>
                 <div className="bg-green-600 rounded-2xl rounded-tr-sm px-4 py-3 max-w-[85%] ml-auto">
                   <p className="text-sm text-white">
-                    Hello! We&apos;d love to help. Can you share your location and preferred schedule?
+                    Hello! We&apos;d love to help. Can you share your space size and preferred timing?
                   </p>
                 </div>
                 <div className="bg-slate-50 rounded-2xl rounded-tl-sm px-4 py-3 max-w-[85%]">
                   <p className="text-sm text-slate-700">
-                    Khalifa City, every Thursday at 10 AM 📍
+                    ~800 sqft, every morning before 9 AM 📍
                   </p>
                 </div>
                 <div className="bg-green-600 rounded-2xl rounded-tr-sm px-4 py-3 max-w-[85%] ml-auto">
@@ -173,7 +200,7 @@ export default function HeroSection() {
                   Type a message...
                 </div>
                 <div className="w-9 h-9 rounded-xl bg-green-600 flex items-center justify-center cursor-pointer">
-                  <svg viewBox="0 0 24 24" fill="white" className="w-4 h-4 translate-x-0.5">
+                  <svg viewBox="0 0 24 24" fill="white" className="w-4 h-4 translate-x-0.5" aria-hidden="true">
                     <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
                   </svg>
                 </div>
@@ -198,7 +225,7 @@ export default function HeroSection() {
                   className={`${positions[i]} flex items-center gap-2.5 bg-white rounded-2xl shadow-lg border border-slate-100 px-4 py-3 z-20`}
                 >
                   <div className={`w-8 h-8 rounded-xl ${color} flex items-center justify-center`}>
-                    <Icon size={16} />
+                    <Icon size={16} aria-hidden="true" />
                   </div>
                   <span className="text-sm font-semibold text-slate-700 whitespace-nowrap">{label}</span>
                 </motion.div>

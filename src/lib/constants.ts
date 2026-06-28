@@ -1,4 +1,4 @@
-export const SITE_URL = "https://www.genienow.ae";
+export const SITE_URL = "https://www.getgenienow.com";
 export const SITE_NAME = "Genienow";
 
 export const WHATSAPP_NUMBER = "971502984394";

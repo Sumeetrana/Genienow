@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Target, Eye, Heart, Shield, ArrowRight } from "lucide-react";
+import { Target, Eye, Heart, Shield, ArrowRight, Users, BadgeCheck, Handshake } from "lucide-react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import Breadcrumb from "@/components/seo/Breadcrumb";
 import JsonLd from "@/components/seo/JsonLd";
@@ -76,8 +76,11 @@ export default function AboutPage() {
               </h1>
             </AnimatedSection>
             <AnimatedSection delay={0.1}>
-              <p className="text-xl text-slate-500 leading-relaxed">
-                Genienow was born from a simple frustration: finding reliable, trustworthy help at home in Abu Dhabi shouldn&apos;t be this hard. We set out to change that.
+              <p className="text-xl text-slate-500 leading-relaxed mb-4">
+                Genienow is a marketplace that connects customers in Abu Dhabi directly with trusted, independent service providers — for homes, businesses, and everything in between.
+              </p>
+              <p className="text-lg text-slate-400 leading-relaxed">
+                We are not an agency. We don&apos;t employ the providers. We verify them, match them to the right customers, and stand behind every booking we confirm.
               </p>
             </AnimatedSection>
           </div>
@@ -94,16 +97,16 @@ export default function AboutPage() {
               </h2>
               <div className="flex flex-col gap-5 text-slate-600 leading-relaxed">
                 <p>
-                  Abu Dhabi is home to a diverse, dynamic community — expat families in Khalifa City, young professionals on Al Reem Island, long-term residents in Al Khalidiyah, and businesses across the city. What they all share is the same challenge: finding reliable, trustworthy home service providers.
+                  Abu Dhabi is home to thousands of skilled, experienced individuals — cleaners, cooks, babysitters, house helpers, and pet sitters — who work independently and take real pride in their craft. On the other side are families, professionals, and businesses who need exactly these services but have no easy, trustworthy way to find them.
                 </p>
                 <p>
-                  The informal market is large but fragmented. Word of mouth helps within communities, but it doesn&apos;t scale. Existing platforms either feel transactional or add too much friction. People want something simpler — and they want to actually trust the person who walks through their door.
+                  The informal market is large but fragmented. Word of mouth works within tight communities but doesn&apos;t scale. Existing platforms feel either too transactional or add unnecessary friction. What people really want is simple: a trusted recommendation, a reliable person, and a straightforward way to book.
                 </p>
                 <p>
-                  We started Genienow to build the layer of trust and organisation that this market is missing. By connecting customers directly with vetted, independent service providers through a channel everyone already uses — WhatsApp — we&apos;re making the experience faster, clearer, and more human.
+                  Genienow is that layer. We are a marketplace — not a staffing agency. Every provider in our network is an independent professional who has been personally verified by our team before their first booking. We check identities, evaluate experience, and ensure each provider meets our standard of quality and professionalism.
                 </p>
                 <p>
-                  We&apos;re building and growing steadily — listening to customers, working with providers, and improving with every booking across Abu Dhabi and the UAE. We believe in getting it right before scaling it up.
+                  Our role is to do the trust-building work so you don&apos;t have to — and to make the whole experience as simple as sending a WhatsApp message. We&apos;re building steadily, listening to customers, supporting providers, and improving with every booking.
                 </p>
               </div>
             </AnimatedSection>
@@ -155,6 +158,74 @@ export default function AboutPage() {
               </AnimatedSection>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* How We Work */}
+      <section className="py-20 bg-white" aria-labelledby="how-we-work-heading">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="max-w-3xl mx-auto text-center mb-14">
+            <p className="text-green-600 text-sm font-semibold uppercase tracking-widest mb-4">
+              How We Work
+            </p>
+            <h2 id="how-we-work-heading" className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-5">
+              A marketplace, not an agency
+            </h2>
+            <p className="text-slate-500 text-lg leading-relaxed">
+              Genienow connects you directly with independent, self-employed service providers. We are not their employer — we are the trusted bridge between you and them.
+            </p>
+          </AnimatedSection>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <AnimatedSection delay={0}>
+              <div className="relative bg-slate-50 rounded-2xl p-7 h-full border border-slate-100">
+                <div className="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center mb-5">
+                  <Users size={22} className="text-green-600" aria-hidden="true" />
+                </div>
+                <div className="absolute -top-3 -right-3 w-8 h-8 bg-green-600 text-white text-sm font-bold rounded-full flex items-center justify-center shadow">1</div>
+                <h3 className="font-bold text-slate-900 text-lg mb-2">You tell us what you need</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  Send us a WhatsApp message describing the service — cleaning, cooking, babysitting, house help, or pet sitting — your location in Abu Dhabi, and your preferred timing.
+                </p>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.1}>
+              <div className="relative bg-slate-50 rounded-2xl p-7 h-full border border-slate-100">
+                <div className="w-12 h-12 bg-sky-50 rounded-xl flex items-center justify-center mb-5">
+                  <BadgeCheck size={22} className="text-sky-600" aria-hidden="true" />
+                </div>
+                <div className="absolute -top-3 -right-3 w-8 h-8 bg-green-600 text-white text-sm font-bold rounded-full flex items-center justify-center shadow">2</div>
+                <h3 className="font-bold text-slate-900 text-lg mb-2">We match you with a verified provider</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  We identify the right independent provider from our verified network — someone whose experience, location, and availability matches your requirements. We share their details before confirming.
+                </p>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.2}>
+              <div className="relative bg-slate-50 rounded-2xl p-7 h-full border border-slate-100">
+                <div className="w-12 h-12 bg-violet-50 rounded-xl flex items-center justify-center mb-5">
+                  <Handshake size={22} className="text-violet-600" aria-hidden="true" />
+                </div>
+                <div className="absolute -top-3 -right-3 w-8 h-8 bg-green-600 text-white text-sm font-bold rounded-full flex items-center justify-center shadow">3</div>
+                <h3 className="font-bold text-slate-900 text-lg mb-2">The provider delivers, we follow up</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  The independent provider delivers the service directly to you. We stay in the loop, follow up after every booking, and resolve anything that doesn&apos;t meet your expectation.
+                </p>
+              </div>
+            </AnimatedSection>
+          </div>
+
+          {/* Marketplace model callout */}
+          <AnimatedSection delay={0.3}>
+            <div className="bg-slate-900 rounded-2xl p-8 max-w-3xl mx-auto text-center">
+              <p className="text-slate-300 text-base leading-relaxed">
+                <span className="text-white font-semibold">Every provider is an independent professional.</span>{" "}
+                They are self-employed individuals who choose to work through the Genienow network. We verify their identity and experience, set quality standards, and support them in building a reliable, reputable practice. You get the benefit of a vetted individual — without the complexity of finding one yourself.
+              </p>
+            </div>
+          </AnimatedSection>
         </div>
       </section>
 

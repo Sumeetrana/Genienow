@@ -28,13 +28,13 @@ export const metadata: Metadata = {
     "housekeeping services Abu Dhabi business",
   ],
   alternates: {
-    canonical: "https://www.genienow.ae/for-businesses",
+    canonical: "https://www.getgenienow.com/for-businesses",
   },
   openGraph: {
     title: "Commercial Cleaning & Business Services in Abu Dhabi | Genienow",
     description:
       "Reliable commercial cleaning and housekeeping for offices, retail stores, clinics & restaurants in Abu Dhabi. Book via WhatsApp.",
-    url: "https://www.genienow.ae/for-businesses",
+    url: "https://www.getgenienow.com/for-businesses",
   },
 };
 
