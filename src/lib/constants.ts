@@ -1,10 +1,10 @@
 export const SITE_URL = "https://www.genienow.ae";
 export const SITE_NAME = "Genienow";
 
-export const WHATSAPP_NUMBER = "971509876543"; // Replace with real UAE number
+export const WHATSAPP_NUMBER = "971502984394";
 export const WHATSAPP_BASE = `https://wa.me/${WHATSAPP_NUMBER}`;
 export const EMAIL = "hello@genienow.ae";
-export const PHONE_DISPLAY = "+971 50 987 6543"; // Replace with real UAE number
+export const PHONE_DISPLAY = "+971 50 298 4394";
 export const BUSINESS_HOURS = "Sun–Thu, 8 AM – 8 PM GST";
 export const ADDRESS = "Abu Dhabi, United Arab Emirates";
 

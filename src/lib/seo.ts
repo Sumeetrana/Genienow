@@ -77,7 +77,7 @@ export function buildOrganizationSchema() {
       "Genienow is Abu Dhabi's trusted home services marketplace, connecting residents and businesses with verified independent service providers for cleaning, cooking, babysitting, house help, and pet sitting.",
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+971509876543",
+      telephone: "+971502984394",
       contactType: "customer service",
       availableLanguage: ["English", "Arabic"],
       contactOption: "TollFree",
