@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -10,6 +11,8 @@ import {
   buildWebSiteSchema,
 } from "@/lib/seo";
 import { SITE_URL, SITE_NAME } from "@/lib/constants";
+
+const GA_ID = "G-CB3HDMRRNP";
 
 const geist = Geist({
   variable: "--font-geist-sans",
@@ -120,6 +123,19 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className="min-h-screen bg-white text-slate-900 antialiased">
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
         <JsonLd schema={buildOrganizationSchema()} />
         <JsonLd schema={buildLocalBusinessSchema()} />
         <JsonLd schema={buildWebSiteSchema()} />
